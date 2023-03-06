@@ -1,0 +1,15 @@
+{
+  "name": "foodsearch",
+  "version": "1.0.0",
+  "description": "capstone project foodsearch",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "krittika tiwari",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}

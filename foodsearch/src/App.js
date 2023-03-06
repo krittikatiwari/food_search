@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/navbar/Navbar';
 import Home from './components/pages/Home';
 import Save from './components/pages/Save';
-import Resipe from './components/pages/Resipe';
+import Recipe from './components/pages/Recipe';
 import Korean from './components/pages/korean';
 import Indian from './components/pages/Indian';
 import Signup from './components/pages/Signup';
@@ -18,7 +18,7 @@ function App() {
        <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/save' element={<Save/>}/>
-        <Route path='/resipe' element={<Resipe/>}/>
+        <Route path='/recipe' element={<Recipe/>}/>
         <Route path='/korean' element={<Korean/>}/>
         <Route path='/indian' element={<Indian/>}/>
         <Route path='/sign-up' element={<Signup/>}/>
