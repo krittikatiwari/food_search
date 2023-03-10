@@ -52,7 +52,7 @@ function Home(){
             <div className="popular-box"></div> */}
         </div>
        </div>
-       <Footer/>
+       {/* <Footer/> */}
         </>
     )
 }

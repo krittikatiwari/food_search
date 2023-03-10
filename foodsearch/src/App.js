@@ -11,6 +11,9 @@ import Italian from './components/pages/Italian';
 import French from './components/pages/French';
 import Aboutus from './components/pages/Aboutus';
 import { Route, Routes } from 'react-router-dom';
+import Vegetarian from './components/India/Vegetarian';
+import SahiPaneer from './components/India/Sahipaner';
+import Footer from './components/pages/Footer';
 function App() {
   return (
     <div className="App">
@@ -25,7 +28,11 @@ function App() {
         <Route path='/italian' element={<Italian/>}/>
         <Route path='/french' element={<French/>}/>
         <Route path='/about-us' element={<Aboutus/>}/>
+        <Route path='/vegetarian' element={<Vegetarian/>}/>
+        <Route path='/sahi-paneer' element={<SahiPaneer/>}/>
+    
      </Routes>
+     <Footer/>
     </div>
   );
 }

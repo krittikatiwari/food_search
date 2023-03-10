@@ -3,6 +3,9 @@ import './Indian.css'
 import { Link } from "react-router-dom";
 import { India } from "../Data/Indian";
 export default function Indian(){
+
+    
+
     return (
         <>
         <div className="display-img">
