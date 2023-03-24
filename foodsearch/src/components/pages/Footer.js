@@ -14,10 +14,9 @@ function Footer(){
                 </ul>
                 <ul className="menu">
                     <li><Link className="a" to='/'>Home</Link></li>
-                    <li><Link className="a" to='/resipe'>Resipe</Link></li>
+                    <li><Link className="a" to='/recipe'>Resipe</Link></li>
                     <li><Link className="a" to='/save'>Save</Link></li>
                     <li><Link className="a" to='/about-us'>About Us</Link></li>
-                    <li><Link className="a" to='/sign-up'>Sign Up</Link></li>
                 </ul>
 
                 <p>©2023 CraveSavor | All Right Reserved</p>

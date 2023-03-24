@@ -3,9 +3,9 @@ import "./Vegetarian.css";
 import { Link } from "react-router-dom";
 export default function IndianSweet() {
   const [advice, setAdvice] = useState([]);
-
+  const API=process.env.REACT_APP_KEY +'/home?foodtype=IndianSweet'
   useEffect(() => {
-    fetch("http://localhost:2000/home?foodtype=IndianSweet")
+    fetch(API)
       .then((res) => res.json())
       .then((data) => {
         setAdvice(data);

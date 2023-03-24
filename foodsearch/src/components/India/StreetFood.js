@@ -3,7 +3,7 @@ import "./Vegetarian.css";
 import { Link } from "react-router-dom";
 export default function StreetFood() {
   const [advice, setAdvice] = useState([]);
-
+  const API=process.env.REACT_APP_KEY +'/home?foodtype=StreetFood'
   useEffect(() => {
     fetch("http://localhost:2000/home?foodtype=StreetFood")
       .then((res) => res.json())

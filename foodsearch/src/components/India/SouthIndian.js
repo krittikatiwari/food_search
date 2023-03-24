@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 export default function SouthIndian() {
   const [advice, setAdvice] = useState([]);
 
+  const API=process.env.REACT_APP_KEY +'/home?foodtype=SouthIndian'
   useEffect(() => {
-    fetch("http://localhost:2000/home?foodtype=SouthIndian")
+    fetch(API)
       .then((res) => res.json())
       .then((data) => {
         setAdvice(data);

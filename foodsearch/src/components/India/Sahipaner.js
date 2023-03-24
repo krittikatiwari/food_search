@@ -11,6 +11,7 @@ export default function SahiPaneer() {
   const [recipeData, setRecipeData] = useState([]);
   useEffect(() => console.log(recipeData), [recipeData]);
 
+  
   useEffect(() => {
     fetch(`http://localhost:2000/home/${id}`)
       .then((res) => res.json())
