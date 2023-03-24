@@ -138,9 +138,9 @@
     }
 
     .cuisine-heading {
-        margin-top: 14vh;
+        margin-top: 12vh;
         margin-bottom: 4vh;
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .cuisine-container {
@@ -152,6 +152,7 @@
     .cuisine-box {
         
         width: 40vw;
+        height: 30vh;
     }
 
     .popular-heading {
@@ -169,6 +170,7 @@
     .popular-box {
         
         width: 40vw;
+        height: 30vh;
     }
     
     

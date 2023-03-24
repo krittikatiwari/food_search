@@ -4,9 +4,16 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Dropdown from './Dropdown';
 
-function Navbar() {
+
+
+
+ function Navbar() {
+
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
+  
+
+  
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -26,7 +33,7 @@ function Navbar() {
       setDropdown(false);
     }
   };
-
+console.log();
   return (
     <>
       <nav className='navbar'>

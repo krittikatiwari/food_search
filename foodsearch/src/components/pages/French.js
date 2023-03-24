@@ -5,7 +5,7 @@ export default function French(){
     return (
         <>
         <div className="display-img">
-            <img src="https://www.expatica.com/app/uploads/sites/5/2014/05/french-food.jpg"></img>
+            <img alt="" src="https://www.expatica.com/app/uploads/sites/5/2014/05/french-food.jpg" hre></img>
         </div>
         <div className="type-of-recipe"><h1 className="type-of-recipe">French Food</h1></div>
         <div className="french-container" >

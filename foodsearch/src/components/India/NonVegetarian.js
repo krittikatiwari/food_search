@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import "./Vegetarian.css";
-export default function Vegetarian() {
+import { Link } from "react-router-dom";
+export default function NonVegetarian() {
   const [advice, setAdvice] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:2000/home?foodtype=Vegetarian")
+    fetch("http://localhost:2000/home?foodtype=NonVegetarian")
       .then((res) => res.json())
       .then((data) => {
         setAdvice(data);
@@ -22,13 +22,13 @@ export default function Vegetarian() {
           {advice.map((eac, index) => {
             return (
               <Link to={`/indian/${eac._id}`} className="abc">
-                <div key={index} className="vegetarian-box">
-                  <img className="img" src={eac.image} alt="image_" />
-                  <div className="vegetarian-names">
-                    <h2 className="vegetarian-name">{eac.name}</h2>
-                  </div>
+              <div key={index} className="vegetarian-box">
+                <img className="img" src={eac.image} alt="image_" />
+                <div className="vegetarian-names">
+                  <h2 className="vegetarian-name">{eac.name}</h2>
                 </div>
-              </Link>
+              </div>
+            </Link>
             );
           })}
           {/* <Link className="abc" to='/sahi-paneer'><div className="vegetarian-box"><img className="img" src="https://myfoodstory.com/wp-content/uploads/2022/04/Shahi-Paneer-1.jpg"></img>

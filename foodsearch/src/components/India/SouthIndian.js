@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import "./Vegetarian.css";
-export default function Vegetarian() {
+import { Link } from "react-router-dom";
+export default function SouthIndian() {
   const [advice, setAdvice] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:2000/home?foodtype=Vegetarian")
+    fetch("http://localhost:2000/home?foodtype=SouthIndian")
       .then((res) => res.json())
       .then((data) => {
         setAdvice(data);
@@ -21,7 +21,7 @@ export default function Vegetarian() {
         <div className="vegetarian-container">
           {advice.map((eac, index) => {
             return (
-              <Link to={`/indian/${eac._id}`} className="abc">
+                <Link to={`/indian/${eac._id}`} className="abc">
                 <div key={index} className="vegetarian-box">
                   <img className="img" src={eac.image} alt="image_" />
                   <div className="vegetarian-names">

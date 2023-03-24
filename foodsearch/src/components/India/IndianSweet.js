@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import "./Vegetarian.css";
-export default function Vegetarian() {
+import { Link } from "react-router-dom";
+export default function IndianSweet() {
   const [advice, setAdvice] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:2000/home?foodtype=Vegetarian")
+    fetch("http://localhost:2000/home?foodtype=IndianSweet")
       .then((res) => res.json())
       .then((data) => {
         setAdvice(data);

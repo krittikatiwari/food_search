@@ -100,7 +100,7 @@
     }
 
     .indian-heading h1{
-        font-size: 3.5em;
+        font-size: 3em;
     }
 
     .indian-container {
@@ -112,5 +112,6 @@
     .indian-box {
         
         width: 40vw;
+        height: 30vh;
     }
 }

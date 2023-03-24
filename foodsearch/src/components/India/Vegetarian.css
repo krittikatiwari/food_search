@@ -10,7 +10,7 @@
     row-gap: 3vw;
     justify-content: center;
     column-gap: 5vh;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     margin-bottom: 10vh;
 }
 
@@ -37,12 +37,14 @@
 }
 
 .vegetarian-box:hover .img{
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 .vegetarian-name:hover{
     opacity: 1;
 }
+
+
 
 .vegetarian-box img{
     margin: 0;
@@ -66,7 +68,20 @@
     opacity: 0;
     font-size: 2rem;
     text-transform: capitalize;
-    color: #0f0f0f;
+    color: #3a1212;
     align-self: center;
     text-align: center;
+}
+
+@media screen and (max-width: 960px){
+.vegetarian-container {
+    row-gap: 3vh;
+    column-gap: 6vw;
+    grid-template-columns: auto auto;
+}
+
+.vegetarian-box {
+    height: 32vh;
+    width: 40vw;
+}
 }

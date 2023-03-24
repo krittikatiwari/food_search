@@ -24,7 +24,7 @@ export const India=[
         
             iname:"Street Food",
             iimage:"https://content.jdmagicbox.com/comp/delhi/i3/011p1221737902j8p3i3/catalogue/street-foods-of-india-lajpat-nagar-3-delhi-restaurants-s6rhru.jpg",
-            iPath:'/stereet-food'
+            iPath:'/street-food'
     
         },
         {

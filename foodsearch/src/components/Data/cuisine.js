@@ -18,11 +18,11 @@ export const Cuisine=[
     {
         Country:"Italina",
         image:italian,
-        path:'/italian'
+        Path:'/italian'
     },
     {
         Country:"French",
         image:french,
-        path:'/french'
+        Path:'/french'
     }
 ]
