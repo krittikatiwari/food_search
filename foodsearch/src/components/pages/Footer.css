@@ -5,14 +5,14 @@
     
 }
 
+
 .body{
-    display: flex;
-    width: 100%;
-    align-items: 100vh;
+    min-height: 100vh;
 }
 
+
 footer{
-    position: relative;
+    position:static ;
     width: 100%;
     background-color: rgb(113, 73, 73);
     padding: 20px 50px;
@@ -20,7 +20,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 10vh; ;
+    margin-top: 10vh;
 }
 
 footer .social-icon,footer .menu {

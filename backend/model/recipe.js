@@ -13,11 +13,18 @@ const details = new mongoose.Schema({
         type:String,
         required:true,
     },
+    countryImage:{
+        type:String,
+        required:true,
+    },
     foodtype:{
         type:String,
         required:true,
     },
-    
+    foodtypeImage:{
+        type:String,
+        required:true,
+    },
     recipe:{
         type:String,
         required:true,

@@ -4,6 +4,7 @@ const app = express();
 const mongoose = require("mongoose");
 const cors = require("cors");
 const Model = require("./model/recipe");
+const Category=require("./model/category")
 
 
 
@@ -16,7 +17,7 @@ app.use(express.json());
 mongoose.set("strictQuery", false);
 
 mongoose
-  .connect("mongodb://localhost/Foodsearch", {
+  .connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     family: 4,
@@ -75,4 +76,52 @@ app.post("/abc", (req, res) => {
     });
 
   res.send({ message: "done successfully" });
+});
+
+
+app.get('/category' , async(req , res)=>{
+
+  const data = await Category.find(req.query);
+  res.send(data);
+
+})
+
+app.post('/category' , (req , res)=>{
+
+  const {  country,countryImage,subCategory } =
+  req.body;
+const category = new Category();
+
+
+category.country = country;
+category.countryImage = countryImage;
+category.subCategory = subCategory;
+
+category
+  .save()
+  .then((result) => {
+    console.log("Saved category successfully :", result);
+  })
+  .catch((error) => {
+    console.error("Error saving:", error);
+  });
+
+res.send({ message: "done successfully" });
+
+})
+
+app.get("/category/:id", async (req, res) => {
+  const { id } = req.params;
+
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    return res.status(404).json({ error: "No such category!, Sorry!" });
+  }
+
+  const data = await Category.findById(id);
+
+  if (!data) {
+    return res.status(404).json({ error: "No such recipe!, Sorry!" });
+  }
+
+  res.status(200).json(data);
 });

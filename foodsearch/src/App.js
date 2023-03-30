@@ -3,7 +3,7 @@ import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/pages/Home";
 import Save from "./components/pages/Save";
-import Indian from "./components/pages/Indian";
+import  Indian from "./components/TypeOfFood/Indian"
 import Aboutus from "./components/pages/Aboutus";
 import { Route, Routes } from "react-router-dom";
 import Vegetarian from "./components/India/Vegetarian";
