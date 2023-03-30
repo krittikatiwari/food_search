@@ -47,14 +47,14 @@ export default function SahiPaneer() {
             <Link to='/save'><button className='btn'>Save</button></Link>
           </div>
         </div>
-        <div className="ingredients">
+        {/* <div className="ingredients">
           <h2>Ingredients</h2>
           <div className="Ingredients-list">
             <p>
-              {/* {recipeData.ingredient} */}
+              {recipeData.ingredient}
             </p>
           </div>
-        </div>
+        </div> */}
         <div className="recipe-page">
           <h2>Recipe</h2>
           <div className="method">

@@ -49,3 +49,27 @@
     width: 90%;
     margin-top: 5vh;
 }
+
+@media screen and (max-width: 960px){
+
+    .sahipaneer-video{
+       
+        width: 90%;
+        height: 45vh;
+        
+    }
+
+    .sahipaneer-name{
+        width: 63%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .sahipaneer-abc{
+        display: flex;
+        flex-wrap: wrap;
+        /* background-color: beige; */
+        width: 39%;
+        justify-content: space-around;
+    }
+}

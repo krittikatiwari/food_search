@@ -31,18 +31,7 @@ export default function IndianSweet() {
               </Link>
             );
           })}
-          {/* <Link className="abc" to='/sahi-paneer'><div className="vegetarian-box"><img className="img" src="https://myfoodstory.com/wp-content/uploads/2022/04/Shahi-Paneer-1.jpg"></img>
-                <div className="cusine-names"><h2 className="cusine-name">Indian</h2></div>
-            </div></Link>
-            <div className="vegetarian-box"><img src="https://myfoodstory.com/wp-content/uploads/2022/04/Shahi-Paneer-1.jpg" alt="a"></img></div>
-            <div className="vegetarian-box"><img src="https://www.gastrotravelogue.com/wp-content/uploads/2020/01/food-in-France.jpg" alt="a"></img></div>
-            <div className="vegetarian-box"><img src="https://www.gastrotravelogue.com/wp-content/uploads/2020/01/food-in-France.jpg" alt="a"></img></div>
-            <div className="vegetarian-box"><img src="https://www.gastrotravelogue.com/wp-content/uploads/2020/01/food-in-France.jpg" alt="a"></img></div>
-            <div className="vegetarian-box"><img src="https://www.gastrotravelogue.com/wp-content/uploads/2020/01/food-in-France.jpg" alt="a"></img></div>
-            <div className="vegetarian-box"><img src="https://www.gastrotravelogue.com/wp-content/uploads/2020/01/food-in-France.jpg" alt="a"></img></div>
-            <div className="vegetarian-box"><img src="https://www.gastrotravelogue.com/wp-content/uploads/2020/01/food-in-France.jpg" alt="a"></img></div>
-            <div className="vegetarian-box"><img src="https://www.gastrotravelogue.com/wp-content/uploads/2020/01/food-in-France.jpg" alt="a"></img></div>
-             */}
+
         </div>
       </div>
     </>
